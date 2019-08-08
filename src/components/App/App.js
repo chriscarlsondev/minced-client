@@ -3,10 +3,10 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import LandingPage from '../../routes/LandingPage/LandingPage'
 import HomePage from '../../routes/HomePage/HomePage'
-import AddNewRecipePage from '../../routes/AddNewRecipePage/AddNewRecipePage'
+import AddRecipePage from '../../routes/AddRecipePage/AddRecipePage'
 import ViewRecipePage from '../../routes/ViewRecipePage/ViewRecipePage'
 import { Route, Switch } from 'react-router-dom'
-import MincedContext from '../../MuchToDoContext';
+import MincedContext from '../../MincedContext';
 import './App.css'
 import config from '../../config';
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     Recipes: [],
   }
 
-  setRasks = recipes => {
+  setRecipes = Recipes => {
     this.setState({
       Recipes
     })
