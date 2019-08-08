@@ -9,6 +9,7 @@ export default class AddRecipeForm extends Component {
     e.preventDefault();
     let newRecipe = {
       title: e.target.title.value,
+      description: e.target.description.value,
       servings: e.target.servings.value,
       preptime: e.target.preptime.value,
       cooktime: e.target.cooktime.value,
