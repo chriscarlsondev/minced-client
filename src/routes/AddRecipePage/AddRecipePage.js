@@ -5,7 +5,7 @@ import AddRecipeForm from '../../components/AddRecipeForm/AddRecipeForm'
 export default class AddRecipePage extends Component {
     render() {
         return (
-            <AddRecipeForm />
+            <AddRecipeForm history={this.props.history} />
         )
     }
 }

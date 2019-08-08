@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import MincedContext from '../../contexts/MincedContext';
 import RecipeListItem from '../RecipeListItem/RecipeListItem';
-import RecipesApiService from '../../services/recipe-api-service'
 
 export default class RecipeList extends Component {
     static defaultProps = {
@@ -15,7 +14,7 @@ export default class RecipeList extends Component {
       }
     
       render() {
-        let Recipes = RecipesApiService.getRecipes();
+        let Recipes = this.context.handleGetAllRecipes();
           return <>
               {Recipes.map((recipe, i) =>
         <RecipeListItem

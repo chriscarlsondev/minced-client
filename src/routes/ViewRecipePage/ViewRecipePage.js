@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
 import MincedContext from '../../contexts/MincedContext';
-import RecipesApiService from '../../services/recipe-api-service'
 export default class ViewRecipePage extends Component {
     static contextType = MincedContext;
 
-    componentDidMount() {
-
-        // .then(this.context.setRecipe)
-        // .catch(this.context.setError)
-    }
-
     render() {
         const { recipeId } = this.props.match.params
-        let Recipe = RecipesApiService.getRecipe(recipeId);
+        let Recipe = this.context.handleGetRecipe(recipeId);
         return (
-
 <section>
         <header>
             <h2>{Recipe.title}</h2>
@@ -25,15 +17,15 @@ export default class ViewRecipePage extends Component {
           </div>
           <div className="form-section">
             <h3>Servings</h3>
-            <p>{Recipe.serves}</p>
+            <p>{Recipe.servings}</p>
           </div>
           <div className="form-section">
             <h3>Prep Time</h3>
-            <p>{Recipe.prep_time}</p>
+            <p>{Recipe.preptime}</p>
           </div>
           <div className="form-section">
             <h3>Cook Time</h3>
-            <p>{Recipe.cook_time}</p>
+            <p>{Recipe.cooktime}</p>
           </div>
           <div className="form-section">
             <h3>Ingredients</h3>
