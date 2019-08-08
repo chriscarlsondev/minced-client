@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ViewRecipePage from './ViewRecipePage';
+import RecipeList from './RecipeList';
 import { BrowserRouter } from 'react-router-dom'
 
-it('ViewRecipePage renders without crashing', () => {
+
+it('RecipeList renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<BrowserRouter><ViewRecipePage /></BrowserRouter>, div);
+  ReactDOM.render(<BrowserRouter><RecipeList /></BrowserRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });

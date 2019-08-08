@@ -6,13 +6,12 @@ import HomePage from '../../routes/HomePage/HomePage'
 import AddRecipePage from '../../routes/AddRecipePage/AddRecipePage'
 import ViewRecipePage from '../../routes/ViewRecipePage/ViewRecipePage'
 import { Route, Switch } from 'react-router-dom'
-import MincedContext from '../../MincedContext';
+import MincedContext from '../../contexts/MincedContext';
 import './App.css'
-import config from '../../config';
 class App extends Component {
 
   state = {
-    Recipes: [],
+    Recipes: []
   }
 
   setRecipes = Recipes => {
@@ -66,8 +65,7 @@ class App extends Component {
               component={AddRecipePage}
             />
             <Route
-              exact
-              path={'/view'}
+              path={'/recipe/:recipeId'}
               component={ViewRecipePage}
             />
           </Switch>
