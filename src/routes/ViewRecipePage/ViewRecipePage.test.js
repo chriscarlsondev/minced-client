@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ViewRecipePage from './ViewRecipePage';
 import { BrowserRouter } from 'react-router-dom'
 
-it('App renders without crashing', () => {
+it('ViewRecipePage renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, div);
+  ReactDOM.render(<BrowserRouter><ViewRecipePage /></BrowserRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
