@@ -37,11 +37,11 @@ export default class AddRecipeForm extends Component {
         <textarea rows="4" cols="50" name="description"></textarea>
       </div>
       <div className="form-section">
-        <h3>Prep Time</h3>
+        <h3>Prep Time (in minutes)</h3>
         <input type="text" name="preptime" />
       </div>
       <div className="form-section">
-        <h3>Cook Time</h3>
+        <h3>Cook Time (in minutes)</h3>
         <input type="text" name="cooktime" />
       </div>
       <div className="form-section">
