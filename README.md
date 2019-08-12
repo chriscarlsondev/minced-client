@@ -21,14 +21,14 @@ An app that allows you to save and organize all of your recipes one place.
 ## Screenshots
 
 ### Homepage
-![homepage-screenshot](https://user-images.githubusercontent.com/49646269/62900051-a41a6900-bd48-11e9-9c98-a0f5dbd2682d.png)
+![homepage-screenshot](https://user-images.githubusercontent.com/49646269/62900239-315dbd80-bd49-11e9-9e7a-0efed1b18072.png)
 
 ### Add Recipe Screen
-![add-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900046-a1b80f00-bd48-11e9-9071-6d20a5c8f371.png)
-![add-recipe-screenshot2](https://user-images.githubusercontent.com/49646269/62900049-a381d280-bd48-11e9-8ca2-338ad16ae018.png)
+![add-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900236-30c52700-bd49-11e9-9d12-76f915c9f298.png)
+![add-recipe-screenshot2](https://user-images.githubusercontent.com/49646269/62900237-30c52700-bd49-11e9-895c-b8f35b13daee.png)
 
 ### View Recipe Screen w/ Delete Button
-![view-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900050-a381d280-bd48-11e9-86c1-a6cfeeece69d.png)
+![view-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900238-315dbd80-bd49-11e9-9c47-2d99bbb8c4af.png)
 
 ## Authors
 * **Chris Carlson** - Front-end and back-end development, testing and styling
