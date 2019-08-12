@@ -7,7 +7,7 @@ export default class HomePage extends Component {
         return (
             <>
             <section>
-                <LinkButton to='/add'>Add Recipe</LinkButton>
+                <LinkButton to='/add' className="teal">Add Recipe</LinkButton>
             </section>
             <section>
                 <RecipeList />

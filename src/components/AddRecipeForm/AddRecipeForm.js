@@ -39,12 +39,9 @@ export default class AddRecipeForm extends Component {
           <textarea rows="4" cols="50" name="rec_description" id="rec_description"></textarea>
           </div>
           <div className="form-section">    
-          <label htmlFor="servings" className="optional">Servings</label>
-        <input type="number" name="servings" id="servings" min="0" /> servings
-        <label htmlFor="preptime" className="optional">Prep Time</label>
-        <input type="number" name="preptime" id="preptime" min="0" /> minutes
-            <label htmlFor="cooktime" className="optional">Cook Time</label>
-            <input type="number" name="cooktime" id="cooktime" min="0" /> minutes
+          <label htmlFor="servings" className="optional">Servings</label><input type="number" name="servings" id="servings" min="0" className="short-text" />
+        <label htmlFor="preptime" className="optional">Prep Time</label><input type="number" name="preptime" id="preptime" min="0" className="short-text" /> minutes
+            <label htmlFor="cooktime" className="optional">Cook Time</label><input type="number" name="cooktime" id="cooktime" min="0" className="short-text" /> minutes
               </div>
             <div className="form-section">
             <label htmlFor="ingredients">Ingredients<span className="required">*</span> - Please include each ingredient on a separate line.</label>

@@ -12,13 +12,13 @@ export default class RecipeList extends Component {
   render() {
     let Recipes = this.context.Recipes;
     return(
-      <>
+      <ul>
         {Recipes.map((recipe, i) =>
           <RecipeListItem
             key={i}
             {...recipe}
           />)}
-      </>
+      </ul>
     )
   }
 }

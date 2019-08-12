@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer'
 import LandingPage from '../../routes/LandingPage/LandingPage'
 import HomePage from '../../routes/HomePage/HomePage'
 import AddRecipePage from '../../routes/AddRecipePage/AddRecipePage'
+import EditRecipePage from '../../routes/EditRecipePage/EditRecipePage'
 import ViewRecipePage from '../../routes/ViewRecipePage/ViewRecipePage'
 import { Route, Switch } from 'react-router-dom'
 import MincedContext from '../../contexts/MincedContext';
@@ -68,6 +69,30 @@ class App extends Component {
         console.error(error)
       })
   }
+  
+  // Update Recipe
+  handleUpdateRecipe = (recipe) => {
+
+    fetch(config.API_BASE_URL+'recipes/', {
+      method: 'PATCH',
+      body: JSON.stringify(recipe),
+      headers: {
+        'content-type': 'application/json',
+      }
+    })
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(error => Promise.reject(error))
+        }
+        return res.json()
+      }).then(data => {
+          this.handleGetAllRecipes();
+        }
+      )
+      .catch(error => {
+        console.error(error)
+      })
+  }
 
   // Delete Recipe
   handleDeleteRecipe = (recipeId) => {
@@ -78,12 +103,13 @@ class App extends Component {
         if (!res.ok) {
           return res.json().then(error => Promise.reject(error))
         }
+      }).then(data => {
         this.handleGetAllRecipes();
-        return res.json()
-      })
-      .catch(error => {
-        console.error(error)
-      })
+      }
+    )
+    .catch(error => {
+      console.error(error)
+    })
   }
 
   render() {
@@ -92,7 +118,8 @@ class App extends Component {
       handleAddNewRecipe: this.handleAddNewRecipe,
       handleGetAllRecipes: this.handleGetAllRecipes,
       handleDeleteRecipe: this.handleDeleteRecipe,
-      handleGetRecipe: this.handleGetRecipe
+      handleGetRecipe: this.handleGetRecipe,
+      handleUpdateRecipe: this.handleUpdateRecipe,
     }
     return (
       <MincedContext.Provider value={contextValue}>
@@ -115,7 +142,12 @@ class App extends Component {
               component={AddRecipePage}
             />
             <Route
-              path={'/recipe/:recipeId'}
+              exact
+              path={'/edit/:recipeId'}
+              component={EditRecipePage}
+            />
+            <Route
+              path={'/view/:recipeId'}
               component={ViewRecipePage}
             />
           </Switch>

@@ -53,8 +53,8 @@ export default class ViewRecipePage extends Component {
           <h3>Additional Notes</h3>
           <p>{Recipe.notes}</p>
           </div>
-          <form id="delete-recipe">
-            <button type="button" onClick={this.handleDelete}>Delete Recipe</button>
+          <form>
+          <button type="button" onClick={this.handleDelete}>Delete Recipe</button>
             </form>
     </section>
       )
