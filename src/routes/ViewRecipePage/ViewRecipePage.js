@@ -26,7 +26,7 @@ export default class ViewRecipePage extends Component {
       </header>
       <div className="form-section">
           <h3>Description</h3>
-          <p>{Recipe.description}</p>
+          <p>{Recipe.rec_description}</p>
         </div>
         <div className="form-section">
           <h3>Servings</h3>
