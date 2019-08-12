@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer'
 import LandingPage from '../../routes/LandingPage/LandingPage'
 import HomePage from '../../routes/HomePage/HomePage'
 import AddRecipePage from '../../routes/AddRecipePage/AddRecipePage'
-import EditRecipePage from '../../routes/EditRecipePage/EditRecipePage'
 import ViewRecipePage from '../../routes/ViewRecipePage/ViewRecipePage'
 import { Route, Switch } from 'react-router-dom'
 import MincedContext from '../../contexts/MincedContext';
@@ -140,11 +139,6 @@ class App extends Component {
               exact
               path={'/add'}
               component={AddRecipePage}
-            />
-            <Route
-              exact
-              path={'/edit/:recipeId'}
-              component={EditRecipePage}
             />
             <Route
               path={'/view/:recipeId'}
