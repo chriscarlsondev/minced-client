@@ -27,47 +27,34 @@ export default class AddRecipeForm extends Component {
     <header>
         <h2>Add Recipe</h2>
     </header>
-      <form id="add-new-recipe" onSubmit={this.handleSubmit}>
-      <div className="form-section">
-        <h3>Title</h3>
-        <input type="text" name="title" required />
-      </div>
-      <div className="form-section">
-        <h3>Description</h3>
-        <textarea rows="4" cols="50" name="description"></textarea>
-      </div>
-      <div className="form-section">
-        <h3>Prep Time</h3>
-        <p>How many minutes will be required to prep the recipe?</p>
-        <input type="number" name="preptime" min="0" /> minutes
-      </div>
-      <div className="form-section">
-            <h3>Cook Time (in minutes)</h3>
-            <p>How many minutes will be required for cooking the recipe?</p>
-        <input type="number" name="cooktime" min="0" /> minutes
-      </div>
-      <div className="form-section">
-            <h3>Ingredients</h3>
-            <p>What ingredients are needed for this recipe? Include each ingredient on a separate line.</p>
-        <textarea rows="4" cols="50" name="ingredients"></textarea>
-      </div>
-      <div className="form-section">
-            <h3>Instructions</h3>
-            <p>What instructions should be followed to make this recipe? Include each instruction step on a separate line.</p>
-        <textarea rows="4" cols="50" name="instructions"></textarea>
-      </div>
-      <div className="form-section">
-            <h3>Servings</h3>
-            <p>How many servings will be made if the recipe is followed?</p>
-        <input type="number" name="servings" min="0" /> servings
-      </div>
-      <div className="form-section">
-        <h3>Additional Notes</h3>
-        <textarea rows="4" cols="50" name="notes"></textarea>
-      </div>
-      <div className="form-section">
+        <form id="add-new-recipe" onSubmit={this.handleSubmit}>
+        <div className="form-section">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required />
+      <label for="description">Description:</label>
+          <textarea rows="4" cols="50" name="description" id="description"></textarea>
+          </div>
+          <div className="form-section">    
+          <label for="servings">Servings:</label>
+        <input type="number" name="servings" id="servings" min="0" /> servings
+        <label for="preptime">Prep Time:</label>
+        <input type="number" name="preptime" id="preptime" min="0" /> minutes
+            <label for="cooktime">Cook Time:</label>
+            <input type="number" name="cooktime" id="cooktime" min="0" /> minutes
+              </div>
+            <div className="form-section">
+            <label for="ingredients">Ingredients - Please include each ingredient on a separate line.</label>
+            <textarea rows="4" cols="50" name="ingredients" id="ingredients" placeholder="Ingredient #1&#10;Ingredient #2" required></textarea>
+          </div>
+          <div className="form-section">
+            <label for="instructions">Instructions - Please include each step-by-step instruction step on a separate line.</label>
+            <textarea rows="4" cols="50" name="instructions" id="instructions" placeholder="Step 1.&#10;Step 2." required></textarea>
+          </div>
+          <div className="form-section">
+        <label for="notes">Additional Notes:</label>
+            <textarea rows="4" cols="50" name="notes" id="notes"></textarea>
+            </div>
         <button type="submit">Add Recipe</button>
-      </div>
             </form>
             </>
     )
