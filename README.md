@@ -25,7 +25,6 @@ An app that allows you to save and organize all of your recipes one place.
 
 ### Add Recipe Screen
 ![add-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900385-8994bf80-bd49-11e9-982a-faf7c828f5a5.png)
-![add-recipe-screenshot2](https://user-images.githubusercontent.com/49646269/62900386-8994bf80-bd49-11e9-9648-ec2ea6c97b49.png)
 
 ### View Recipe Screen w/ Delete Button
 ![view-recipe-screenshot](https://user-images.githubusercontent.com/49646269/62900387-8994bf80-bd49-11e9-89c4-2d4d531a45a1.png)
