@@ -8,14 +8,14 @@ export default class AddRecipeForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let newRecipe = {
-      title: e.target.title.value,
-      rec_description: e.target.rec_description.value,
+      title: e.target.title.value.trim(),
+      rec_description: e.target.rec_description.value.trim(),
       servings: e.target.servings.value,
       preptime: e.target.preptime.value,
       cooktime: e.target.cooktime.value,
-      ingredients: e.target.ingredients.value,
-      instructions: e.target.instructions.value,
-      notes: e.target.notes.value
+      ingredients: e.target.ingredients.value.trim(),
+      instructions: e.target.instructions.value.trim(),
+      notes: e.target.notes.value.trim()
     }
     this.context.handleAddNewRecipe(newRecipe);
     this.props.history.push('/home');

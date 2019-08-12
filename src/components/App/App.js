@@ -78,11 +78,9 @@ class App extends Component {
         if (!res.ok) {
           return res.json().then(error => Promise.reject(error))
         }
+        this.handleGetAllRecipes();
         return res.json()
-      }).then(data => {
-          this.handleGetAllRecipes();
-        }
-      )
+      })
       .catch(error => {
         console.error(error)
       })
