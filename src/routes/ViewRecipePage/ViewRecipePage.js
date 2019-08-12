@@ -3,6 +3,12 @@ import MincedContext from '../../contexts/MincedContext';
 export default class ViewRecipePage extends Component {
   static contextType = MincedContext;
   
+  handleDelete = e => {
+    e.preventDefault();
+    this.context.handleDeleteRecipe(this.props.match.params.recipeId);
+    this.props.history.push('/home');
+  }
+
   render() {
     const { recipeId } = this.props.match.params
     let Recipe = this.context.handleGetRecipe(recipeId);
@@ -46,7 +52,10 @@ export default class ViewRecipePage extends Component {
         <div className="form-section">
           <h3>Additional Notes</h3>
           <p>{Recipe.notes}</p>
-        </div>
+          </div>
+          <form id="delete-recipe">
+            <button type="button" onClick={this.handleDelete}>Delete Recipe</button>
+            </form>
     </section>
       )
     } else {

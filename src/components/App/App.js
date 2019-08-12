@@ -71,6 +71,7 @@ class App extends Component {
 
   // Delete Recipe
   handleDeleteRecipe = (recipeId) => {
+    console.log(recipeId)
     fetch(config.API_BASE_URL+'recipes/'+recipeId, {
       method: 'DELETE'
     })
