@@ -1,18 +1,21 @@
 * {
     box-sizing: border-box;
-    font-size: 1em;
+}
+
+html {
+  font-size: 16px;
 }
   
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: .9em;
+  font-size: 1rem;
   color: #000;
   line-height: 1.5;
 }
 
-
 h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -26,20 +29,17 @@ h2 {
   font-weight: normal;
   margin: 10px 0;
   padding: 0;
-  font-size: 2.0em;
+  font-size: 2rem;
 }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 5px 0;
   padding: 0;
 }
 
-p {
-  font-size: .9em;
-}
 
 a {
   color: #39CCCC;
@@ -100,8 +100,8 @@ button {
   background-color: #767676;
   border-radius: 5px;
   color: #FFF;
-  font-size: 1em;
-  padding: .9em 1.25em;
+  font-size: 1rem;
+  padding: .9rem 1.25rem;
   margin: 10px 1px 10px 0;
 }
 
@@ -123,7 +123,7 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.0em;
+  font-size: 1rem;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid darkgray;
@@ -135,7 +135,7 @@ input[type=number].short-text {
   width: 100px;
   padding: 12px 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.0em;
+  font-size: 1rem;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid drakgray;
@@ -143,12 +143,11 @@ input[type=number].short-text {
   border-radius: 4px;
 }
 
-
 textarea {
   width: 100%;
   padding: 12px 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid darkgray;
@@ -179,4 +178,88 @@ label {
 
 .teal {
   background-color: #39CCCC;
+}
+
+
+input[type=text] {
+  /* padding: 12px 20px;
+  font-size: 1rem;
+  margin: 8px 0; */
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  border-style: groove;
+  border-radius: 4px;
+}
+
+input[type=number].short-text {
+  /* padding: 12px 20px;
+  font-size: 1rem;
+  margin: 8px 0; */
+  font-family: 'Roboto', sans-serif;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid drakgray;
+  border-style: groove;
+  border-radius: 4px;
+}
+
+textarea {
+  /* padding: 12px 20px;
+  font-size: 1rem;
+  margin: 8px 0; */
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  border-style: groove;
+  border-radius: 4px;
+}
+
+/* Responsive Styling
+========================================================================== */
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  input[type=text] {
+    width: 100%;
+  }
+  
+  input[type=number].short-text {
+    width: 100px;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+}
+
+/* Tablet (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  input[type=text] {
+    width: 200px;
+  }
+  
+  input[type=number].short-text {
+    width: 100px;
+  }
+  
+  textarea {
+    width: 400px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-device-width : 768px) {
+  input[type=text] {
+    width: 500px;
+  }
+  
+  input[type=number].short-text {
+    width: 100px;
+  }
+  
+  textarea {
+    width: 500px;
+  }
 }
