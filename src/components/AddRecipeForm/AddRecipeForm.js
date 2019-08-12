@@ -33,29 +33,29 @@ export default class AddRecipeForm extends Component {
     </header>
         <form id="add-new-recipe" onSubmit={this.handleSubmit}>
         <div className="form-section">
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="title">Title<span className="required">*</span></label>
         <input type="text" name="title" id="title" required />
-      <label htmlFor="description">Description:</label>
+      <label htmlFor="description"><span className="optional">Description</span></label>
           <textarea rows="4" cols="50" name="description" id="description"></textarea>
           </div>
           <div className="form-section">    
-          <label htmlFor="servings">Servings:</label>
+          <label htmlFor="servings"><span className="optional">Servings</span></label>
         <input type="number" name="servings" id="servings" min="0" /> servings
-        <label htmlFor="preptime">Prep Time:</label>
+        <label htmlFor="preptime"><span className="optional">Prep Time</span></label>
         <input type="number" name="preptime" id="preptime" min="0" /> minutes
-            <label htmlFor="cooktime">Cook Time:</label>
+            <label htmlFor="cooktime"><span className="optional">Cook Time</span></label>
             <input type="number" name="cooktime" id="cooktime" min="0" /> minutes
               </div>
             <div className="form-section">
-            <label htmlFor="ingredients">Ingredients - Please include each ingredient on a separate line.</label>
+            <label htmlFor="ingredients">Ingredients<span className="required">*</span> - Please include each ingredient on a separate line.</label>
             <textarea rows="4" cols="50" name="ingredients" id="ingredients" required></textarea>
           </div>
           <div className="form-section">
-            <label htmlFor="instructions">Instructions - Please include each step-by-step instruction step on a separate line.</label>
+            <label htmlFor="instructions">Instructions<span className="required">*</span> - Please include each step-by-step instruction step on a separate line.</label>
             <textarea rows="4" cols="50" name="instructions" id="instructions" required></textarea>
           </div>
           <div className="form-section">
-        <label htmlFor="notes">Additional Notes:</label>
+        <label htmlFor="notes">Additional Notes</label>
             <textarea rows="4" cols="50" name="notes" id="notes"></textarea>
             </div>
         <button type="submit">Add Recipe</button> <button type="button" onClick={this.handleClickCancel}>Cancel</button>

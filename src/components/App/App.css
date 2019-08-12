@@ -4,18 +4,44 @@
 }
   
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
   color: #000;
   line-height: 1.5;
 }
 
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h1 a{
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 2.0em;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
 p {
-  font-size: 1em;
+  font-size: .9em;
 }
 
 a {
-  color: #2185d0;
+  color: #39CCCC;
 }
 
 main {
@@ -30,13 +56,6 @@ section {
   color: #000;
 }
 
-h2 {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-  margin: 10px 0;
-  padding: 0;
-  font-size: 1.5em;
-}
 
 section.landing-page-section {
   min-height: 200px;
@@ -59,15 +78,10 @@ header {
   background: #fff;
 }
 
-h1 {
-  font-size: 3.5em;
-  margin: 0;
-}
-
 .logo-link {
   text-decoration: none;
   text-align: left;
-  font-family:'Heebo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   color: black;
 }
@@ -75,14 +89,6 @@ h1 {
 .logo {
   width: 300px;
   display: block;
-}
-
-h3 {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.25em;
-  font-weight: normal;
-  margin: 0 0 5px 0;
-  padding: 0;
 }
 
 footer {
@@ -132,8 +138,9 @@ textarea {
 
 label {
   margin-top: 20px;
+  font-weight: 600;
   display: block;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 .screenshot {
@@ -143,4 +150,8 @@ label {
 
 .optional {
   color: #CCC;
+}
+
+.required {
+  color: red;
 }

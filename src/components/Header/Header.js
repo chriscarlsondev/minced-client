@@ -10,7 +10,7 @@ export default class Header extends Component {
             </nav>
             <header role="banner">
             <h1><Link to="/home">Minced</Link></h1>
-            <h2>All of your recipes saved and organized in one place.</h2>
+            <p>All of your recipes saved and organized in one place.</p>
             </header>
             </>
         )

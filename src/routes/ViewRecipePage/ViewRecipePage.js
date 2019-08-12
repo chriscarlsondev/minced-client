@@ -42,7 +42,7 @@ export default class ViewRecipePage extends Component {
         </div>
         <div className="form-section">
           <h3>Ingredients</h3>
-              <ul>{ingredients}</ul>
+              <ul className="ingredients-list">{ingredients}</ul>
         </div>
         <div className="form-section">
           <h3>Instructions</h3>
