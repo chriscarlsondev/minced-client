@@ -169,12 +169,6 @@ label {
   text-decoration: line-through;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .screenshot {
   border: 1px solid black;
   width: 300px;
