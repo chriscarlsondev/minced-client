@@ -44,11 +44,11 @@ export default class AddRecipeForm extends Component {
               </div>
             <div className="form-section">
             <label for="ingredients">Ingredients - Please include each ingredient on a separate line.</label>
-            <textarea rows="4" cols="50" name="ingredients" id="ingredients" placeholder="Ingredient #1&#10;Ingredient #2" required></textarea>
+            <textarea rows="4" cols="50" name="ingredients" id="ingredients" required></textarea>
           </div>
           <div className="form-section">
             <label for="instructions">Instructions - Please include each step-by-step instruction step on a separate line.</label>
-            <textarea rows="4" cols="50" name="instructions" id="instructions" placeholder="Step 1.&#10;Step 2." required></textarea>
+            <textarea rows="4" cols="50" name="instructions" id="instructions" required></textarea>
           </div>
           <div className="form-section">
         <label for="notes">Additional Notes:</label>
