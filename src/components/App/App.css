@@ -17,6 +17,18 @@ h1 {
   font-size: 3rem;
   font-weight: 600;
   margin: 0;
+  padding: 0;
+}
+
+p.tagline {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  margin: 30px 0;
 }
 
 h1 a{
@@ -52,11 +64,10 @@ main {
 section {
   text-align: left;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
   background: #fff;
   color: #000;
 }
-
 
 section.landing-page-section {
   min-height: 200px;
@@ -79,6 +90,10 @@ header {
   background: #fff;
 }
 
+footer {
+  margin: 10px 0 10px 5px;
+}
+
 .logo-link {
   text-decoration: none;
   text-align: left;
@@ -88,12 +103,10 @@ header {
 }
 
 .logo {
-  width: 300px;
-  display: block;
-}
-
-footer {
-  padding: 10px;
+  width: 50px;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 button {

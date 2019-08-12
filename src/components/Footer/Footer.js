@@ -4,6 +4,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
+            <hr />
             <p>Minced, a web app from <a href="http://www.chriscarlson.org/">Chris Carlson</a>.</p>
             </footer>
         )
