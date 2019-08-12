@@ -37,24 +37,29 @@ export default class AddRecipeForm extends Component {
         <textarea rows="4" cols="50" name="description"></textarea>
       </div>
       <div className="form-section">
-        <h3>Prep Time (in minutes)</h3>
-        <input type="text" name="preptime" />
+        <h3>Prep Time</h3>
+        <p>How many minutes will be required to prep the recipe?</p>
+        <input type="number" name="preptime" min="0" /> minutes
       </div>
       <div className="form-section">
-        <h3>Cook Time (in minutes)</h3>
-        <input type="text" name="cooktime" />
+            <h3>Cook Time (in minutes)</h3>
+            <p>How many minutes will be required for cooking the recipe?</p>
+        <input type="number" name="cooktime" min="0" /> minutes
       </div>
       <div className="form-section">
-        <h3>Ingredients</h3>
+            <h3>Ingredients</h3>
+            <p>What ingredients are needed for this recipe? Include each ingredient on a separate line.</p>
         <textarea rows="4" cols="50" name="ingredients"></textarea>
       </div>
       <div className="form-section">
-        <h3>Instructions</h3>
+            <h3>Instructions</h3>
+            <p>What instructions should be followed to make this recipe? Include each instruction step on a separate line.</p>
         <textarea rows="4" cols="50" name="instructions"></textarea>
       </div>
       <div className="form-section">
-        <h3>Servings</h3>
-        <input type="text" name="servings" />
+            <h3>Servings</h3>
+            <p>How many servings will be made if the recipe is followed?</p>
+        <input type="number" name="servings" min="0" /> servings
       </div>
       <div className="form-section">
         <h3>Additional Notes</h3>
