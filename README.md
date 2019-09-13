@@ -7,7 +7,7 @@ An app that allows you to save and organize all of your recipes one place.
 * HTML
 * CSS
 * JavaScript
-* React
+* ReactJS
 
 ## Features
 * Simple page for adding recipes
